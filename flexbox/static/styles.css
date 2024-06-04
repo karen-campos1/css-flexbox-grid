@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-image: url('https://img.freepik.com/premium-vector/watercolor-irises-border_551372-538.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    height: 200px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #311f5f;
+}
+
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: #b8bae0;
+    color: rgb(23, 18, 71);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.content-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:rgb(215,229,246);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #311f5f;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #311f5f;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .nav, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a, .footer div {
+        padding: 10px 0;
+    }
+}
